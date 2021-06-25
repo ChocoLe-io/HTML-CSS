@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8" />
+    <meta name="description" content="id-class" />
+    <title>id</title>
+    <link href="id_style.css" rel="stylesheet" />
+  </head>
+  <header>
+    <h1>id-class</h1>
+  </header>
+  <body>
+    <main>
+      <h2>id,classプロパティのテストコードです。CSSを含みます。</h2>
+      <hr />
+      <h3>
+        classプロパティは識別子を指定するときに使います。<br />これを用いて、CSSなどで特定の要素を編集することが可能となります。
+      </h3>
+      <h3>
+        divタグにredクラスを与えた場合、ブロック部分全てにredが適用されてしまいます。
+      </h3>
+      <div class="red">
+        <p>赤色にしたい</p>
+        <p>赤色にしたい</p>
+        <p>黒色のまま</p>
+      </div>
+      <h3>
+        pタグにredクラスを与えた場合、クラスを与えられた段落のみが赤色に変わります。
+      </h3>
+      <div>
+        <p class="red">赤色にしたい</p>
+        <p class="red">赤色にしたい</p>
+        <p>黒色のまま</p>
+      </div>
+      <hr />
+      <h3>
+        idプロパティは識別子を指定するときに使います。<br />
+        これを用いて、CSSなどで特定の要素を編集することが可能となります。<br />
+        名前が同じ識別子は一つのhtmlファイルでは使用できません。<br />
+        idプロパティはclassプロパティよりも優先されます。
+      </h3>
+      <h3>基本的な操作はclassプロパティと変わりません。</h3>
+      <div>
+        <p id="red">赤色にしたい</p>
+        <p id="blue">青色にしたい</p>
+        <p>黒色のまま</p>
+      </div>
+      <h3>idとclassは共存できます。</h3>
+      <div>
+        <p class="red" id="size">赤くて大きく</p>
+      </div>
+    </main>
+  </body>
+</html>
